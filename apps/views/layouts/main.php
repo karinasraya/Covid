@@ -76,6 +76,18 @@
                                 'icon' => 'mdi-map-marker-radius',
                             ),
                             2 => array(
+                                'name' => 'Deteksi Dini',
+                                'url' => site_url('detection'),
+                                'class' => 'detection',
+                                'icon' => 'mdi-medical-bag',
+                            ),
+                            3 => array(
+                                'name' => 'Live Chat',
+                                'url' => site_url('livechat'),
+                                'class' => 'livechat',
+                                'icon' => 'mdi-message-text-outline',
+                            ),
+                            4 => array(
                                 'name' => 'Hotline',
                                 'url' => site_url('about'),
                                 'class' => 'about',
