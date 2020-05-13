@@ -33,7 +33,7 @@ class About extends MY_Controller
   {
     $this->template
       ->title("About")
-      ->set_layout('login')
+      ->set_layout('main')
       ->build('index', $this->data);
   }
 }
