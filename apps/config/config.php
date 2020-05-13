@@ -23,14 +23,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+
 if (isset($_SERVER['HTTP_HOST'])) {
     $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
     $config['base_url'] .= "://" . $_SERVER['HTTP_HOST'];
     $config['base_url'] .= preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME']));
 } else {
-    $config['base_url']    = '';
+    $config['base_url']    = 'http://localhost/Covid-master/public';
 }
-
+//$config['base_url']    = 'http://localhost/Covid-master/public';
 /*
 |--------------------------------------------------------------------------
 | Index File
