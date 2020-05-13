@@ -1,39 +1,23 @@
 <?php
 
 defined('BASEPATH') or exit('No direct script access allowed');
-/*
- * ***************************************************************
- *  Script : 
- *  Version : 
- *  Date :
- *  Author : PAW! Development Semarang
- *  Email : pawdev.id@gmail.com
- *  Description : 
- * ***************************************************************
- */
 
-/**
- * Description of Wilayah
- *
- * @author adi
- */
+ 
 class Wilayah extends MY_Controller
 {
-
+	function __construct(){
+		parent::__construct();		
+		$this->load->model('Wilayah_qry');
+                $this->load->helper('url');
+  }
+	function index(){
+		$data['rs_rujukan'] = $this->Wilayah_qry->tampil_data()->result();
+		$this->load->view('index_wilayah',$data);
+		$this->template
+		->title("Wilayah")
+		->set_layout('main')
+		->build('index_wilayah', $this->data);
+	}
   protected $data = array();
   protected $countries = array();
-
-  public function __construct()
-  {
-    parent::__construct();
-    $this->load->model('Wilayah_qry');
-  }
-
-  public function index()
-  {
-    $this->template
-      ->title("Wilayah")
-      ->set_layout('lock')
-      ->build('index', $this->data);
-  }
 }
