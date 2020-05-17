@@ -29,7 +29,7 @@ if (isset($_SERVER['HTTP_HOST'])) {
     $config['base_url'] .= "://" . $_SERVER['HTTP_HOST'];
     $config['base_url'] .= preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME']));
 } else {
-    $config['base_url']    = 'http://localhost/Covid-master/public';
+    $config['base_url']    = 'http://localhost/Covid/public';
 }
 //$config['base_url']    = 'http://localhost/Covid-master/public';
 /*

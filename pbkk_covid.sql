@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2020 at 07:16 PM
+-- Generation Time: May 17, 2020 at 12:38 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -21,6 +21,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `pbkk_covid`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `username` varchar(50) NOT NULL,
+  `password` longtext NOT NULL,
+  `last_login` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`username`, `password`, `last_login`) VALUES
+('admin', '$2y$10$tonZkQrnGnp9n38rWeMTieLPNxtDfvy4Z/35Q4rlFObsm/xFnSae.', '2020-05-17 10:37:28');
 
 -- --------------------------------------------------------
 
@@ -144,6 +163,12 @@ INSERT INTO `rs_rujukan` (`nomor`, `provinsi`, `nama_rs`, `alamat_rs`) VALUES
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`username`);
 
 --
 -- Indexes for table `rs_rujukan`
