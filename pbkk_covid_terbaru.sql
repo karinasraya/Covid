@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2020 at 12:38 PM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.11
+-- Generation Time: May 19, 2020 at 01:38 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,25 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `pbkk_covid`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
-
-CREATE TABLE `admin` (
-  `username` varchar(50) NOT NULL,
-  `password` longtext NOT NULL,
-  `last_login` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`username`, `password`, `last_login`) VALUES
-('admin', '$2y$10$tonZkQrnGnp9n38rWeMTieLPNxtDfvy4Z/35Q4rlFObsm/xFnSae.', '2020-05-17 10:37:28');
 
 -- --------------------------------------------------------
 
@@ -160,21 +141,73 @@ INSERT INTO `rs_rujukan` (`nomor`, `provinsi`, `nama_rs`, `alamat_rs`) VALUES
 (99, 'Maluku Utara', 'RSU Chasan Basoeri Ternate', 'Jl. Tanah Tinggi Ternate telp. 0921-21281 , Fax : 217777'),
 (100, 'Papua', 'RSU Jayapura', 'Jl. Kesehatan I Dok ll Jayapura 99112');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `deteksi`
+--
+
+CREATE TABLE `deteksi` (
+  `nomor` int(11) NOT NULL,
+  `nik` varchar(16) NOT NULL,
+  `nama` varchar(150) NOT NULL,
+  `alamat` varchar(300) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `nohp` varchar(13) NOT NULL,
+  `score` int(5) NOT NULL,
+  `status` varchar(11) NOT NULL,
+  `waktu` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `deteksi`
+--
+
+INSERT INTO `deteksi` (`nomor`, `nik`, `nama`, `alamat`, `email`, `nohp`, `score`, `status`, `waktu`) VALUES
+(1, '3509206304000005', 'Karina Soraya', 'Jl. Jambu 14-A, Jember', 'karinasoraya.ks@gmail.com', '0895411218946', 0, 'sehat', '2020-05-18 23:33:15');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(150) NOT NULL,
+  `password` text NOT NULL,
+  `last_login` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `token` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`, `last_login`, `token`) VALUES
+(1, 'admin', '$2y$10$0BMUKfVt3gs7pZlQqNm/be6DylJAmkGCWGy3fFNDT1D0R//mvObJG', '2020-05-18 23:33:15', 'fe3d84216b556bb161d419d62868b1e3');
+
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`username`);
 
 --
 -- Indexes for table `rs_rujukan`
 --
 ALTER TABLE `rs_rujukan`
   ADD PRIMARY KEY (`nomor`);
+
+--
+-- Indexes for table `deteksi`
+--
+ALTER TABLE `deteksi`
+  ADD PRIMARY KEY (`nomor`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -185,6 +218,18 @@ ALTER TABLE `rs_rujukan`
 --
 ALTER TABLE `rs_rujukan`
   MODIFY `nomor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+
+--
+-- AUTO_INCREMENT for table `deteksi`
+--
+ALTER TABLE `deteksi`
+  MODIFY `nomor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
