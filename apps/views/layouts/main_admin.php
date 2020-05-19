@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="<?= base_url('plugins/datatables/datatables.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('plugins/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('plugins/datatables/Select-1.2.4/css/select.bootstrap4.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('/admin.src/assets/fontawesome-free/fontawesome.css'); ?>"></script>
+    
     <!-- End plugin css for this page -->
 
     <!-- inject:css -->
@@ -67,7 +69,7 @@
                                 'name' => 'Home',
                                 'url' => site_url('admin/home'),
                                 'class' => 'admin_home',
-                                'icon' => 'mdi-file-document-box',
+                                'icon' => 'mdi-home',
                             ),
                             1 => array(
                                 'name' => 'RS Rujukan',
@@ -75,12 +77,12 @@
                                 'class' => 'admin_wilayah',
                                 'icon' => 'mdi-map-marker-radius',
                             ),
-                            // 2 => array(
-                            //     'name' => 'Deteksi Dini',
-                            //     'url' => site_url('admin/deteksi'),
-                            //     'class' => 'admin_hasil_deteksi',
-                            //     'icon' => 'mdi-medical-bag',
-                            // ),
+                             2 => array(
+                                 'name' => 'Logout',
+                                 'url' => site_url('logout'),
+                                 'class' => 'logout',
+                                 'icon' => 'mdi-account',
+                             ),
                         );
 
                         $class = ($this->uri->segment(1)) ? $this->uri->segment(1) : 'homeadmin';
@@ -101,16 +103,7 @@
                         }
                         ?>
 
-                        <li class="nav-item dropdown">
-                        <!-- <i class="mdi menu-icon mdi-account"></i> -->
-                        <a class="nav-link dropdown-toggle" id="userDropdown" href="mdi menu-icon mdi-account" role="button" data-toggle="dropdown"></a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="<?= site_url('logout') ?>">Logout</a>
-                        </div>
-                        </li>
 
-                    </ul>
-                    <ul class="navbar-nav ml-auto ml-md-0">
                     </ul>
                 </div>
             </nav>
