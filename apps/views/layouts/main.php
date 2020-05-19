@@ -67,7 +67,7 @@
                                 'name' => 'Home',
                                 'url' => site_url('home'),
                                 'class' => 'home',
-                                'icon' => 'mdi-file-document-box',
+                                'icon' => 'mdi-home',
                             ),
                             1 => array(
                                 'name' => 'RS Rujukan',
