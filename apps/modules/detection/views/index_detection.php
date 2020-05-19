@@ -24,12 +24,12 @@
                     <h3>Apakah Anda Mengalami Demam?</h3>
                     
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" required/>
                         <label for="question-1-answers-A">Ya </label>
                     </div>
                     
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" required/>
                         <label for="question-1-answers-B">Tidak</label>
                     </div>
                     
@@ -41,12 +41,12 @@
                     <h3>Apakah Anda Mengalami Batuk?</h3>
                     
                     <div>
-                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" required/>
                         <label for="question-2-answers-A">Ya</label>
                     </div>
                     
                     <div>
-                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" required/>
                         <label for="question-2-answers-B">Tidak</label>
                     </div>
                     
@@ -58,12 +58,12 @@
                     <h3>Apakah Anda Mengalami Nyeri Tenggorokan?</h3>
                     
                     <div>
-                        <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+                        <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" required/>
                         <label for="question-3-answers-A">Ya</label>
                     </div>
                     
                     <div>
-                        <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+                        <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" required/>
                         <label for="question-3-answers-B">Tidak</label>
                     </div>
                     
@@ -75,12 +75,12 @@
                     <h3>Apakah Anda Mengalami Lemah, Letih, dan Lesu?</h3>
                     
                     <div>
-                        <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+                        <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" required/>
                         <label for="question-4-answers-A">Ya</label>
                     </div>
                     
                     <div>
-                        <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+                        <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" required/>
                         <label for="question-4-answers-B">Tidak</label>
                     </div>
                     
@@ -92,12 +92,12 @@
                     <h3>Apakah Anda mengalami sesak nafas?</h3>
                     
                     <div>
-                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" required/>
                         <label for="question-5-answers-A">Ya</label>
                     </div>
                     
                     <div>
-                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" required/>
                         <label for="question-5-answers-B">Tidak</label>
                     </div>
                     
@@ -110,12 +110,12 @@
                     <h3>Apakah Anda memiliki riwayat perjalanan ke luarnegeri?</h3>
                     
                     <div>
-                        <input type="radio" name="question-6-answers" id="question-6-answers-A" value="A" />
+                        <input type="radio" name="question-6-answers" id="question-6-answers-A" value="A" required/>
                         <label for="question-6-answers-A">Ya</label>
                     </div>
                     
                     <div>
-                        <input type="radio" name="question-6-answers" id="question-6-answers-B" value="B" />
+                        <input type="radio" name="question-6-answers" id="question-6-answers-B" value="B" required/>
                         <label for="question-6-answers-B">Tidak</label>
                     </div>
                  
@@ -126,12 +126,12 @@
                 <h3>Apakah Anda memiliki riwayat perjalanan ke area terjangkit COVID-19?</h3>
                 
                 <div>
-                    <input type="radio" name="question-7-answers" id="question-7-answers-A" value="A" />
+                    <input type="radio" name="question-7-answers" id="question-7-answers-A" value="A" required/>
                     <label for="question-7-answers-A">Ya</label>
                 </div>
                 
                 <div>
-                    <input type="radio" name="question-7-answers" id="question-7-answers-B" value="B" />
+                    <input type="radio" name="question-7-answers" id="question-7-answers-B" value="B" required/>
                     <label for="question-7-answers-B">Tidak</label>
                 </div>
              
@@ -142,12 +142,12 @@
                 <h3>Apakah Anda memiliki riwayat kontak dengan pasien?</h3>
                 
                 <div>
-                    <input type="radio" name="question-8-answers" id="question-8-answers-A" value="A" />
+                    <input type="radio" name="question-8-answers" id="question-8-answers-A" value="A" required/>
                     <label for="question-8-answers-A">Ya</label>
                 </div>
                 
                 <div>
-                    <input type="radio" name="question-8-answers" id="question-8-answers-B" value="B" />
+                    <input type="radio" name="question-8-answers" id="question-8-answers-B" value="B" required/>
                     <label for="question-8-answers-B">Tidak</label>
                 </div>
              
@@ -193,6 +193,25 @@
             if ($answer6 == "A") { $totalCorrect++; }
             if ($answer7 == "A") { $totalCorrect++; }
             if ($answer8 == "A") { $totalCorrect++; }
+
+            if ($answer1 == "B") { 
+                if ($answer2 == "B") {
+                    if ($answer3 == "B") {
+                        if ($answer4 == "B") {
+                            if ($answer5 == "B") {
+                                if ($answer5 == "B") {
+                                    if ($answer6 == "B") {
+                                        if ($answer7 == "B") {
+                                            if ($answer8 == "B") { $totalCorrect = 1; }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             //echo "<div>$totalCorrect / 8 correct</div>";
             if ($totalCorrect == 0) {echo "<div id='results'></div>";}
             elseif ($totalCorrect >= 3) {echo "<div id='results'><h1>Result</h1><br>Jangan Panik! Silahkan Menghubungi Fasilitas terdekat atau hubungi hotline COVID-19 RI 119</div>";}
