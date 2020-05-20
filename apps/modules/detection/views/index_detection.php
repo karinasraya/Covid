@@ -17,7 +17,7 @@
 <style>
 .question{
   text-align: left;
-  text-indent: 150px;
+  text-indent: 40px;
 }
 .quest{
     text-indent: 3px;
@@ -36,7 +36,7 @@
 	background-color:#79bbff;
     border-radius:6px;
     position: relative;
-    margin-left:1150px;
+    margin-left:1050px;
     margin-bottom: 20px;
 	border:1px solid #84bbf3;
 	display:inline-block;

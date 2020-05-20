@@ -41,6 +41,16 @@ input[type=submit]:hover {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  height: 120pt;
+  padding-top:20px;
+}
+.card1 {
+  border-radius:10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  height: 80pt;
+  padding-top:20px;
 }
 
 .about-section {
@@ -274,12 +284,12 @@ Ombudsman Pusat</h4>
   <p>Website ini merupakan project yang digunakan untuk memenuhi Final Project kelas PBKK A</p>
 </div>
 
-<h2 style="text-align:center">Our Team</h2>
+<h2 style="text-align:center;padding-top:1.0rem">Our Team</h2>
 <div class="row">
   <div class="column">
-    <div class="card">
+    <div class="card1">
       <div class="container">
-        <h2>Karina Soraya Puspita Sari</h2>
+        <h3>Karina Soraya Puspita Sari</h3>
         <p class="title">0511174000003</p>
         <p>Karinasoraya.ks@gmail.com</p>
       </div>
@@ -287,9 +297,9 @@ Ombudsman Pusat</h4>
   </div>
 
   <div class="column">
-    <div class="card">
+    <div class="card1">
       <div class="container">
-        <h2>Celia Chintara Yuwine</h2>
+        <h3>Celia Chintara Yuwine</h3>
         <p class="title">05111740000058</p>
         <p>celiachintara@ymail.com</p>
       </div>
@@ -297,9 +307,9 @@ Ombudsman Pusat</h4>
   </div>
   
   <div class="column">
-    <div class="card">
+    <div class="card1">
       <div class="container">
-        <h2>Ayu Mutiara Sari</h2>
+        <h3>Ayu Mutiara Sari</h3>
         <p class="title">05111740000149</p>
         <p>ayumtrsr@gmail.com</p>
       </div>
