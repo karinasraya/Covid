@@ -16,7 +16,12 @@
 </head>
 <style>
 .question{
-  text-align: center;
+  text-align: left;
+  text-indent: 150px;
+}
+.quest{
+    text-indent: 3px;
+    display: inline-block;
 }
 .result{
     text-align:center;
@@ -26,27 +31,30 @@
     padding:13px 32px;
 }
 .myButton {
-	box-shadow: 0px 10px 14px -7px #b8a5b8;
-	background:linear-gradient(to bottom, #ffffff 5%, #c9c9c9 100%);
-	background-color:#ffffff;
-	border-radius:8px;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+    border-radius:6px;
+    position: relative;
+    margin-left:1150px;
+    margin-bottom: 20px;
+	border:1px solid #84bbf3;
 	display:inline-block;
 	cursor:pointer;
-	color:#666666;
+	color:#ffffff;
 	font-family:Arial;
-	font-size:17px;
+	font-size:15px;
 	font-weight:bold;
-	padding:13px 32px;
+	padding:6px 24px;
 	text-decoration:none;
-    text-shadow:0px 1px 0px #808080;
-    align: center;
+	text-shadow:0px 1px 0px #528ecc;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #c9c9c9 5%, #ffffff 100%);
-	background-color:#c9c9c9;
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
 }
 .myButton:active {
-	position:center;
+	position:relative;
 	top:1px;
 }
 
@@ -67,14 +75,14 @@
                
                     <h3>1. Apakah Anda Mengalami Demam?</h3>
                     
-                    <div>
+                    <div >
                         <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" required/>
-                        <label for="question-1-answers-A">Ya </label>
+                        <label for="question-1-answers-A" class= 'quest'> Ya </label>
                     </div>
                     
-                    <div>
+                    <div >
                         <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B"required />
-                        <label for="question-1-answers-B">Tidak</label>
+                        <label for="question-1-answers-B" class= 'quest'>Tidak</label>
                     </div>
                     
     
@@ -83,12 +91,12 @@
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A"required />
-                        <label for="question-2-answers-A">Ya</label>
+                        <label for="question-2-answers-A" class= 'quest'>Ya</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B"required />
-                        <label for="question-2-answers-B">Tidak</label>
+                        <label for="question-2-answers-B" class= 'quest'>Tidak</label>
                     </div>
                     
 
@@ -96,53 +104,53 @@
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" required />
-                        <label for="question-3-answers-A">Ya</label>
+                        <label for="question-3-answers-A" class= 'quest'>Ya</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" required />
-                        <label for="question-3-answers-B">Tidak</label>
+                        <label for="question-3-answers-B" class= 'quest'>Tidak</label>
                     </div>
                     
         
                 
                     <h3>4. Apakah Anda Mengalami Lemah, Letih, dan Lesu?</h3>
                     
-                    <div>
+                    <div >
                         <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" required/>
-                        <label for="question-4-answers-A">Ya</label>
+                        <label for="question-4-answers-A"class= 'quest'>Ya</label>
                     </div>
                     
-                    <div>
+                    <div> 
                         <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B"required />
-                        <label for="question-4-answers-B">Tidak</label>
+                        <label for="question-4-answers-B" class= 'quest'>Tidak</label>
                     </div>
                     
                 
                 
                     <h3>5. Apakah Anda mengalami sesak nafas?</h3>
                     
-                    <div>
+                    <div >
                         <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" required/>
-                        <label for="question-5-answers-A">Ya</label>
+                        <label for="question-5-answers-A" class= 'quest'>Ya</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B"required />
-                        <label for="question-5-answers-B">Tidak</label>
+                        <label for="question-5-answers-B" class= 'quest'>Tidak</label>
                     </div>
                     
                 
                     <h3>6. Apakah Anda memiliki riwayat perjalanan ke luarnegeri?</h3>
                     
-                    <div>
+                    <div >
                         <input type="radio" name="question-6-answers" id="question-6-answers-A" value="A" required/>
-                        <label for="question-6-answers-A">Ya</label>
+                        <label for="question-6-answers-A" class= 'quest'>Ya</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-6-answers" id="question-6-answers-B" value="B" required/>
-                        <label for="question-6-answers-B">Tidak</label>
+                        <label for="question-6-answers-B" class= 'quest'>Tidak</label>
                     </div>
                  
                 
@@ -150,12 +158,12 @@
                 
                 <div>
                     <input type="radio" name="question-7-answers" id="question-7-answers-A" value="A" required/>
-                    <label for="question-7-answers-A">Ya</label>
+                    <label for="question-7-answers-A" class= 'quest'>Ya</label>
                 </div>
                 
-                <div>
+                <div >
                     <input type="radio" name="question-7-answers" id="question-7-answers-B" value="B" required/>
-                    <label for="question-7-answers-B">Tidak</label>
+                    <label for="question-7-answers-B" class= 'quest'>Tidak</label>
                 </div>
              
        
@@ -164,12 +172,12 @@
                 
                 <div>
                     <input type="radio" name="question-8-answers" id="question-8-answers-A" value="A"required />
-                    <label for="question-8-answers-A">Ya</label>
+                    <label for="question-8-answers-A" class= 'quest'>Ya</label>
                 </div>
                 
                 <div>
                     <input type="radio" name="question-8-answers" id="question-8-answers-B" value="B" required/>
-                    <label for="question-8-answers-B">Tidak</label>
+                    <label for="question-8-answers-B"class= 'quest'>Tidak</label>
                 </div>
              
           
@@ -287,8 +295,8 @@
 
     //echo "<div>$totalCorrect / 8 correct</div>";
     if ($totalCorrect == 0) {echo "<div id='results'></div>";}
-    elseif ($totalCorrect >= 3) {echo "<div id='results'><h1>Result</h1><br>Jangan Panik! Silahkan Menghubungi Fasilitas terdekat atau hubungi hotline COVID-19 RI 119</div>";}
-    elseif ($totalCorrect < 3 && $totalCorrect > 0) {echo "<div id='results'><h1>Result</h1><br>Istirahatlah teratur, jangan keluar rumah yaa</div>";}
+    elseif ($totalCorrect >= 3) {echo "<div id='results'><h1>Result</h1><br><h2>Jangan Panik! Silahkan Menghubungi Fasilitas terdekat atau hubungi hotline COVID-19 RI 119</h2></div>";}
+    elseif ($totalCorrect < 3 && $totalCorrect > 0) {echo "<div id='results'><h1>Result</h1><br><h2>Istirahatlah teratur, jangan keluar rumah yaa</h2></div>";}
 
 ?>
 <!-- <input type="submit" value="Back" class="backbtn" /> -->
