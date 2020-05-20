@@ -61,7 +61,7 @@
 						[5, 15, 20, 100, -1],
 						[5, 15, 20, 100, "All"]
 					],
-				"ajax": "http://localhost:8000/CovidRev/public/admin/deteksi/getHasilDeteksi",
+				"ajax": "http://localhost/CovidRev/public/admin/deteksi/getHasilDeteksi",
 				"aoColumns": [
 					{"data": "nomor"},
 					{"data": "nik"},

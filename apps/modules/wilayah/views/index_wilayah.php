@@ -56,7 +56,7 @@
 						[5, 15, 20, 100, -1],
 						[5, 15, 20, 100, "All"]
 					],
-				"ajax": "http://localhost:8000/Covid/public/wilayah/getRSRujukan",
+				"ajax": "http://localhost/Covid/public/wilayah/getRSRujukan",
 				"aoColumns": [
 					{"data": "nomor"},
 					{"data": "provinsi"},

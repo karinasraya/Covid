@@ -15,6 +15,38 @@
 	.modal-backdrop {
   		z-index: -1 !important;
 	}
+	.button {
+		font-weight: 400;
+		color: #6c7293;
+		text-align: center;
+		vertical-align: middle;
+		user-select: none;
+		background-color: transparent;
+		border: 1px solid transparent;
+		padding: 0.625rem 1.125rem;
+		font-size: 0.875rem;
+		line-height: 1;
+		border-radius: 0.25rem;
+		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	.button-primary {
+		position: relative;
+		margin-bottom:0.625rem;
+		color: #fff;
+		background-color: #464dee;
+		border-color: #464dee;
+	}
+
+	.button-primary:hover {
+		color: #fff;
+		background-color: #232beb;
+		border-color: #1720ea;
+	}
+
+	.button-primary:focus, .button-primary.focus {
+		box-shadow: 0 0 0 0.2rem rgba(98, 104, 241, 0.5);
+	}
+
 	iframe {
     	height:700px !important;
 	}
@@ -30,7 +62,7 @@
 	<div class="row">
 	</div>
 
-	<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#insertModal' data-whatever='@mdo'>New</button>
+	<button type='button' class='button button-primary' data-toggle='modal' data-target='#insertModal' data-whatever='@mdo'>New</button>
 	<div class="modal fade" id="insertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -92,7 +124,7 @@
 						[5, 15, 20, 100, -1],
 						[5, 15, 20, 100, "All"]
 					],
-				"ajax": "http://localhost:8000/Covid/public/admin_wilayah/getRSRujukan",
+				"ajax": "http://localhost/Covid/public/admin_wilayah/getRSRujukan",
 				"aoColumns": [
 					{"data": "nomor"},
 					{"data": "provinsi"},
@@ -102,7 +134,7 @@
 						"data": null,
 						render: function ( data, type, row ) {
 							return "<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#updateModal"+data.nomor+"' data-whatever='@mdo'>Edit</button>" +
-							" <a href='http://localhost:8000/Covid/public/admin_wilayah/hapus/"+data.nomor+"' class='btn btn-danger'>Delete</a>";
+							" <a href='http://localhost/Covid/public/admin_wilayah/hapus/"+data.nomor+"' class='btn btn-danger'>Delete</a>";
 						}
 					}
 				]
