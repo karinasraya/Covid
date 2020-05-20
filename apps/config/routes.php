@@ -57,4 +57,6 @@ $route['login'] = 'admin_login/index';
 $route['logout'] = 'admin_login/logout';
 $route['admin/home'] = 'admin_home/index';
 $route['admin/rs_rujukan'] = 'admin_wilayah/index';
+$route['admin/rs_rujukan/update'] = 'admin_wilayah/update';
+// $route['admin/rs_rujukan/delete/:id'] = 'admin_wilayah/hapus';
 $route['admin/deteksi'] = 'admin_hasil_deteksi/index';
